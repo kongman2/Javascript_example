@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         // 콜백 함수: 함수의 매개변수로 호출되는 함수 -> 비동기 함수를 동기적으로 실행되도록 만들 수 있음
+         console.log('안녕하세요')
+
+         function me(callback) {
+            setTimeout(() => {
+               console.log('저는')
+               callback()
+            }, 1000)
+         }
+         me(function () {
+            console.log('하니입니다.')
+         })
+      </script>
+   </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         const grade = Number(prompt('학년을 입력해주세요.', 0))
+         const num = Number(prompt('점수를 입력해주세요.', 0))
+
+         if (0 <= num && num <= 100) {
+            if (grade === 4 && num >= 70) {
+               alert('합격')
+            } else if ((grade < 4 || grade > 4) && num >= 60) {
+               alert('합격')
+            } else {
+               alert('불합격')
+            }
+         } else {
+            alert('점수 에러입니다. 0 ~ 100점 사이의 점수를 입력해주세요.')
+         }
+      </script>
+   </body>
+</html>

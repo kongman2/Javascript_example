@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         try {
+            let str = null
+            console.log(str.length) // 예외발생: str가 null이므로 값이 없기 떄문에 문자열의 길이를 셀수 없다.
+         } catch (error) {
+            alert('str값은 사용할 수 없습니다.')
+         }
+      </script>
+   </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         const roles = ['user', 'admin', 'user', 'admin']
+         const emails = ['alice@example.com', 'bob@example.com', 'charlie@example.com', 'david@example.com']
+
+         // 조건부 연산자(삼항 연산자): 조건식 ? ture일때 결과 : false일때 결과
+         const adminEmails = roles.map((role, index) => (role === 'admin' ? emails[index] : null)).filter((email) => email !== null)
+         console.log(adminEmails)
+      </script>
+   </body>
+</html>

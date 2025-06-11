@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         try {
+            console.log(num) // 예외발생: num을 변수로 선언하지 않았다. (name: ReferenceError / message: num is not defined)
+         } catch (error) {
+            console.log(error.name)
+            console.log(error.message)
+         }
+      </script>
+   </body>
+</html>

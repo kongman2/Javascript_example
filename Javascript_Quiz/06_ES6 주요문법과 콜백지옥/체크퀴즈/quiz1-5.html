@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         const originalArray = [1, 2, 3]
+         const copiedArray = [...originalArray]
+         // const copiedArray = originalArray
+         //얕은 복사하는 코드로 originalArray와 copiedArray의 주소가 같다.
+         copiedArray.push(4)
+         console.log(originalArray)
+         console.log(copiedArray)
+      </script>
+   </body>
+</html>
